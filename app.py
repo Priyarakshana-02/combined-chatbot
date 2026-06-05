@@ -42,8 +42,8 @@ with st.sidebar:
     )
 
     # Combine button
-    if excel_file and sql_file:
-        if st.button("🔗 Combine Both Databases"):
+    if st.button("🔗 Combine Both Databases"):
+        if excel_file and sql_file:
             # Read Excel
             if excel_file.name.endswith(".csv"):
                 excel_df = pd.read_csv(excel_file)
